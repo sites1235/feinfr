@@ -1,6 +1,7 @@
-
 <!DOCTYPE html>
 <html lang="en">
+  <body style="background-color:black;">
+  </body>
   <head>
     <title>TI-84 Plus CE Emulator</title>
     <meta name="description" content="This is a standalone version of the official TI-84 Plus CE HTML5 emulator from Texas Instruments.">
@@ -27,24 +28,26 @@
         margin-right: auto;
       }
       #main_div {
-        padding: 0px;
-        max-width: ${height}px;
+        padding: 4px;
+        max-width: 300px;
         margin-left: auto;
         margin-right: auto;
         display: flex;
         flex-direction: column;
-        gap: 0px;
+        gap: 4px;
       }
     </style>
 
     <script src="https://mn.testnav.com/client/texasinstruments/js/ELG-min.js"></script>
     <!-- these tags would contain inlined data files in the html bundle-->
     <script id="h84statej" type="application/json" data-url="https://mn.testnav.com/client/texasinstruments/bin/No_AppsCE.h84statej"></script>
-    <script id="ti84faceplate" type="application/json" data-url="https://ti84.netlify.app/TI84CE_touch"></script>
+    <script id="ti84faceplate" type="application/json" data-url="https://mn.testnav.com/client/texasinstruments/images/TI84CE_touch.svg"></script>
   </head>
   <body>
     <div id="calculatorDiv"></div>
     <div id="main_div">
+      <a id="popup_button" href="javascript: open_popup();">Open in a separate window</a>
+      <p style="font-size: 11px; line-height: normal">Copyright disclaimer: The files for the emulator itself are not hosted on this website. They are downloaded from <a href="https://mn.testnav.com/client/index.html#login?username=LGN265231722&password=L5E4J8P8" target="_blank">testnav.com</a>, where you can already use it for free.</p>
     </div>
 
     <script>
